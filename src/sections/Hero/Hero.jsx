@@ -29,13 +29,11 @@ function Hero() {
                     <a href='https://github.com/celiapaivab' target="_blank">
                     <img src={githubIcon} alt='Github icon'></img>
                     </a>
-                </span>
-                <span>
                     <a href='https://www.linkedin.com/in/celia-paiva/' target="_blank">
                     <img src={linkedinIcon} alt='Linkedin icon'></img>
                     </a>
                 </span>
-                <p>With a passion for developing modern React web apps for commercial businesses.</p>
+                <p className={styles.description}>With a passion for developing modern React web apps for commercial businesses.</p>
                 <a href={CV} download>
                     <button className='hover' >Resume</button>
                 </a>
