@@ -22,7 +22,6 @@ function Skills() {
                 <SkillList src={checkMarkIcon} skill= "Git" />
                 <SkillList src={checkMarkIcon} skill= "Bootstrap" />
             </div>
-            <hr />
         </section>
     );
 }
