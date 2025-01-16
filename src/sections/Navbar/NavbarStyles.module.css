@@ -1,0 +1,73 @@
+.container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--background-color);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-right: auto;
+}
+
+.toggler {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
+.navlinks {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navlinks a {
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out;
+}
+
+.navlinks a:hover {
+    color: var(--btn-color);
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--background-color);
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (width < 800px) {
+    .toggler {
+        display: block;
+    }
+
+    .navlinks {
+        display: none;
+    }
+}
