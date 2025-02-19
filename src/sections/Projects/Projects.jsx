@@ -33,12 +33,6 @@ function Projects() {
                     h3="To Do List"
                     p="To Do List App"
                 />
-                <ProjectCard
-                    src={hipsster}
-                    link="https://github.com/celiapaivab/todo-list"
-                    h3="To Do List"
-                    p="To Do List App"
-                />
             </div>
         </section>
     );
